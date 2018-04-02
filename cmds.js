@@ -191,6 +191,7 @@ exports.playCmd = rl => {
                 .then(a => {
                     if(a.toLowerCase().trim() === quiz.answer.toLowerCase().trim()){
                         ++puntos;
+                        log("Respuesta Correcta");
                         resolve(oneQuestion());
                     } else {
                         log("Respuesta Incorrecta");                        
